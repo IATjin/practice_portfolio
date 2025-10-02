@@ -1,7 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grace Jin</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
@@ -12,9 +24,11 @@
   </head>
 
   <body>
-    <section class="top">
+    <nav>
+      <section class="top">
+
       <div class="nav-container">
-        <a href="index.html">
+        <a href="home.html">
           <img
             src="image/logo.png"
             alt="my Logo"
@@ -23,15 +37,20 @@
             height="40"
           />
         </a>
-      </div>
-      <div class="nav">
-        <nav><a href="/">Home</a></nav>
-        <nav><a href="/">Work</a></nav>
-        <nav><a href="/">About</a></nav>
-      </div>
-    </section>
 
-    <section class="hero">
+        
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <section class="hero-section">
       <div class="hero-content">
         <h1>Grace Jin</h1>
         <p>
@@ -83,30 +102,48 @@
         <button type="see more about Grace">see more about Grace</button>
       </div>
     </section>
-    <section class="prject area">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
       <div class="project container">
-        <a href="index.html">
-          <img
-            src="image/project1.png"
-            alt="my project1"
-            class="project1"
-            width="300"
-            height="300"
-          />
-        </a>
-      </div>
-    </section>
-    <section class="prject area">
-      <div class="project container">
-        <a href="index.html">
-          <img
-            src="image/project2.png"
-            alt="my project2"
-            class="project2"
-            width="300"
-            height="300"
-          />
-        </a>
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card"></div>
+          <a href="project.html" class="hover-image-link">
+            <div class="hover-image-wrapper">
+              <img
+                class="default-img"
+                src="img/Project_banner.png"
+                alt="Project Image"
+              />
+              <img
+                class="hover-img"
+                src="image/project1.png"
+                alt="Hover Image"
+              />
+            </div>
+            <h3>Mobile Application Design and Development</h3>
+          </a>
+
+          <p>IAT359 Mobile App (Memorial Zen)</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <a href="project2.html" class="hover-image-link">
+            <div class="hover-image-wrapper">
+              <img
+                class="default-img"
+                src="image/project2.png"
+                alt="Project Image"
+              />
+              <img class="hover-img" src="img/hover.png" alt="Hover Image" />
+            </div>
+            <h3>App-based Interface Design</h3>
+          </a>
+
+          <p>IAT334 Interface Design</p>
+        </div>
+        >
       </div>
     </section>
 
@@ -115,12 +152,14 @@
       <div class="container">
         <h3 class="sitename">Grace Jin</h3>
         <p>Thank you for visiting my website.</p>
-        <a
-          href="https://www.instagram.com/jin_e.k/"
-          aria-label="Instagram Profile"
-        >
-          <i class="fab fa-instagram" aria-hidden="true"></i>
-        </a>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.instagram.com/jin_e.k/"
+            aria-label="Instagram Profile"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
     </footer>
   </body>
